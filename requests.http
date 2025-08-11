@@ -1,0 +1,36 @@
+### Get all users
+GET https://localhost:5280/api/users
+Accept: application/json
+
+### Get user by ID
+GET https://localhost:5280/api/users/1
+Accept: application/json
+
+### Create a new user
+POST https://localhost:5280/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Grace",
+  "lastName": "Hopper",
+  "email": "grace@example.com",
+  "isActive": true
+}
+
+### Update an existing user
+PUT https://localhost:5280/api/users/1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 1,
+  "firstName": "Ada",
+  "lastName": "Lovelace",
+  "email": "ada.l@example.com",
+  "isActive": true
+}
+
+### Delete a user
+DELETE https://localhost:5280/api/users/1
+Accept: application/json
